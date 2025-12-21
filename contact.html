@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Aparna Home Foods for orders, inquiries, and custom requirements. WhatsApp, email, or fill out our contact form.">
+    <title>Contact Us - Aparna Home Foods</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Aparna Home Foods Logo">
+                    <span>Aparna Home Foods</span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="order.html" class="nav-link">How to Order</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section-sm"
+        style="background: linear-gradient(135deg, var(--color-warm-beige) 0%, var(--color-cream) 100%); padding-top: var(--space-3xl);">
+        <div class="container text-center">
+            <h1>Get in Touch</h1>
+            <p class="text-large">We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Contact Methods -->
+                <div>
+                    <h2>Contact Information</h2>
+                    <p class="text-large mb-xl">
+                        Have questions? Want to place an order? We're here to help!
+                    </p>
+
+                    <div class="card mb-lg"
+                        style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white;">
+                        <h3 style="color: white;">📱 WhatsApp (Preferred)</h3>
+                        <p
+                            style="color: rgba(255, 255, 255, 0.95); font-size: var(--text-lg); margin-bottom: var(--space-md);">
+                            <strong>+91 98765 43210</strong>
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.9);">
+                            Fastest way to reach us! We typically respond within a few hours.
+                        </p>
+                        <a href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20question%20about%20Aparna%20Home%20Foods"
+                            class="btn btn-primary mt-md" style="background: white; color: #25D366;" target="_blank"
+                            rel="noopener noreferrer">
+                            Open WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="card mb-lg">
+                        <h3 style="color: var(--color-leaf-green);">📧 Email</h3>
+                        <p style="font-size: var(--text-lg); margin-bottom: var(--space-md);">
+                            <strong>info@aparnahomefoods.com</strong>
+                        </p>
+                        <p>For detailed inquiries, bulk orders, or partnership opportunities.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="color: var(--color-leaf-green);">📍 Location</h3>
+                        <p style="font-size: var(--text-lg); margin-bottom: var(--space-md);">
+                            <strong>Hyderabad, Telangana, India</strong>
+                        </p>
+                        <p>We ship pan-India and to select international locations.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form Alternative -->
+                <div>
+                    <div class="card" style="background: var(--color-warm-beige);">
+                        <h3>Send Us a Message</h3>
+                        <p class="mb-lg">For now, the fastest way to reach us is via WhatsApp. Click the button below to
+                            start a conversation.</p>
+
+                        <form id="contactForm" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                            <div>
+                                <label for="name"
+                                    style="display: block; font-weight: 600; margin-bottom: var(--space-xs); font-family: var(--font-heading);">Your
+                                    Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name"
+                                    style="width: 100%; padding: var(--space-sm); border: 2px solid var(--color-primary); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: var(--text-base);">
+                            </div>
+
+                            <div>
+                                <label for="phone"
+                                    style="display: block; font-weight: 600; margin-bottom: var(--space-xs); font-family: var(--font-heading);">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                                    style="width: 100%; padding: var(--space-sm); border: 2px solid var(--color-primary); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: var(--text-base);">
+                            </div>
+
+                            <div>
+                                <label for="message"
+                                    style="display: block; font-weight: 600; margin-bottom: var(--space-xs); font-family: var(--font-heading);">Your
+                                    Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..."
+                                    style="width: 100%; padding: var(--space-sm); border: 2px solid var(--color-primary); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: var(--text-base); resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+                                📱 Send via WhatsApp
+                            </button>
+                        </form>
+
+                        <p
+                            style="font-size: var(--text-sm); color: var(--color-text-light); margin-top: var(--space-md); text-align: center;">
+                            <em>This form will open WhatsApp with your message pre-filled</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--color-leaf-green) 0%, var(--color-light-green) 100%); color: white;">
+        <div class="container container-narrow text-center">
+            <h2 style="color: white;">⏰ When We're Available</h2>
+            <p class="text-large mt-lg" style="color: rgba(255, 255, 255, 0.95);">
+                <strong>Monday to Saturday:</strong> 9:00 AM - 7:00 PM IST<br>
+                <strong>Sunday:</strong> 10:00 AM - 4:00 PM IST
+            </p>
+            <p style="color: rgba(255, 255, 255, 0.9); margin-top: var(--space-lg);">
+                We try to respond to all messages within a few hours during business hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Special Requests -->
+    <section class="section">
+        <div class="container container-narrow">
+            <h2 class="text-center mb-xl">Special Requests & Bulk Orders</h2>
+
+            <div class="grid grid-2">
+                <div class="card-glass" style="padding: var(--space-xl);">
+                    <h3 style="color: var(--color-leaf-green);">🎉 Corporate Gifting</h3>
+                    <p>
+                        Looking for authentic, premium gifts for your employees or clients? We create custom hampers
+                        with a personal touch.
+                    </p>
+                </div>
+
+                <div class="card-glass" style="padding: var(--space-xl);">
+                    <h3 style="color: var(--color-leaf-green);">💒 Wedding & Events</h3>
+                    <p>
+                        Planning a special occasion? We prepare fresh snacks and sweets in bulk for weddings, parties,
+                        and celebrations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-xl">
+                <a href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20bulk%20order%20or%20special%20request"
+                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    Discuss Your Requirements
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="section-sm" style="background-color: var(--color-warm-beige);">
+        <div class="container container-narrow">
+            <div class="card-glass text-center" style="padding: var(--space-xl);">
+                <h4 style="color: var(--color-primary); margin-bottom: var(--space-md);">🏡 Home Kitchen Disclaimer</h4>
+                <p>
+                    All products are prepared in a home kitchen following traditional methods. We maintain the highest
+                    standards of hygiene and food safety, using fresh ingredients and clean practices.
+                </p>
+                <p style="margin-top: var(--space-md);">
+                    <em>For allergen information or dietary concerns, please contact us before placing your order.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>Aparna Home Foods</h4>
+                    <p>
+                        A 35+ year legacy of traditional homemade snacks and sweets, made with the same love and purity
+                        our grandparents started.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="products.html">Products</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="order.html">How to Order</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>📱 WhatsApp: +91 98765 43210</p>
+                    <p>📧 Email: info@aparnahomefoods.com</p>
+                    <p>📍 Location: Hyderabad, Telangana</p>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Note:</strong> All products are prepared in a home kitchen following traditional methods. We
+                maintain the highest standards of hygiene and food safety.
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aparna Home Foods. All rights reserved. | Made with ❤️ for tradition.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20question%20about%20Aparna%20Home%20Foods"
+            class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+            💬
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
